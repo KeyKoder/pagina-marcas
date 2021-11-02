@@ -1,0 +1,15 @@
+.test {
+    width: 100px;
+    height: 100px;
+    background: #48e6de;
+    border: 3px solid #000;
+    transition: 1s ease-in-out;
+    transform: rotate(0deg);
+}
+
+.test:hover {
+    width: 150px;
+    border: 27px solid #000;
+    background: #e64848;
+    transform: rotate(405deg);
+}
