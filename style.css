@@ -1,15 +1,72 @@
-.test {
-    width: 100px;
-    height: 100px;
-    background: #48e6de;
-    border: 3px solid #000;
-    transition: 1s ease-in-out;
-    transform: rotate(0deg);
+/* Extra Styles */
+
+label.underline {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-.test:hover {
-    width: 150px;
-    border: 27px solid #000;
-    background: #e64848;
-    transform: rotate(405deg);
+label.disabled {
+    cursor: not-allowed;
+    color: #888;
+    font-style: italic;
+}
+
+.red, .green, .blue {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background: #f00;
+}
+
+.green {
+    background: #0f0;
+}
+
+.blue {
+    background: #00f;
+}
+
+
+/* Checkbox Control */
+
+input[type="checkbox"].control {
+    display: none;
+}
+
+input[type="checkbox"].control + label + * {
+    transition: ease-in-out .5s;
+}
+
+input[type="checkbox"].control:checked + label::before {
+    content: "\2B9F";
+}
+
+input[type="checkbox"].control:not(:checked) + label::before {
+    content: "\2B9E ";
+}
+
+input[type="checkbox"].control:not(:checked) + label + * {
+    height: 0;
+}
+
+input[type="checkbox"].control:checked + label + * {
+    height: 100px;
+}
+
+
+/* Radio Control */
+
+input[type="radio"].control {
+    display: none;
+}
+
+input[type="radio"].control:checked ~ input[type="radio"].control + * {
+    display: none;
+}
+
+
+input[type="radio"].control:not(:checked) + * {
+    display: none;
 }

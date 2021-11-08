@@ -6,7 +6,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>test</h1>
-    <div class="test"></div>
+    <h1>PAGINA PRUEBAS</h1>
+
+    <!-- Desplegables con CSS -->
+    <!-- Primero se pone un checkbox con la clase de control -->
+    <!-- Despues el label que marcará la sección a desplegar -->
+    <!-- El elemento inmediatamente despues del label será mostrado/ocultado cuando se active/desactive el checkbox -->
+    <!-- Si algun checkbox tiene el atributo checked, empezará con su contenido correspondiente mostrado -->
+    <div>
+        <input type="checkbox" class="control" id="sec1_cb">
+        <label for="sec1_cb" class="underline">RED BOX</label>
+        <div class="red"></div>
+        <input type="checkbox" class="control" id="sec2_cb">
+        <label for="sec2_cb" class="underline">GREEN BOX</label>
+        <div class="green"></div>
+        <input type="checkbox" class="control" id="sec3_cb">
+        <label for="sec3_cb" class="underline">BLUE BOX</label>
+        <div class="blue"></div>
+    </div>
+    <br>
+
+    <hr>
+    
+    <!-- Navegacion Anterior - Siguiente con CSS -->
+    <!-- Primero se pone un radio button con la clase de control -->
+    <!-- Inmediatamente despues, se pone un elemento con el contenido a mostrar en esa seccion -->
+    <!-- Ademas del contenido deseado, debe haber un label que accione el siguiente/anterior radio button si lo hubiera -->
+    <!-- La sección que se mostrará primero es la que tenga el atributo checked -->
+    <!-- IMPORTANTE: Mínimo uno de los radio buttons tiene que tener el atributo checked, si no, no se mostrará nada -->
+    <input type="radio" class="control" name="nav" id="sec1_radio" checked>
+    <div>
+        <h2>Sección Roja</h2>
+        <p>bla bla bla...</p>
+        <p>Este rojo es el <code>#f00</code>...</p>
+        <p>... o el <code>rgb(255,0,0)</code></p>
+        <div class="red"></div>
+        <label class="disabled">PREV</label>
+        <label for="sec2_radio" class="underline">NEXT</label>
+    </div>
+    <input type="radio" class="control" name="nav" id="sec2_radio">
+    <div>
+        <h2>Sección Verde</h2>
+        <p>bla bla bla...</p>
+        <p>Este verde es el <code>#0f0</code>...</p>
+        <p>... o el <code>rgb(0,255,0)</code></p>
+        <div class="green"></div>
+        <label for="sec1_radio" class="underline">PREV</label>
+        <label for="sec3_radio" class="underline">NEXT</label>
+    </div>
+    <input type="radio" class="control" name="nav" id="sec3_radio">
+    <div>
+        <h2>Sección Azul</h2>
+        <p>bla bla bla...</p>
+        <p>Este azul es el <code>#00f</code>...</p>
+        <p>... o el <code>rgb(0,0,255)</code></p>
+        <div class="blue"></div>
+        <label for="sec2_radio" class="underline">PREV</label>
+        <label class="disabled">NEXT</label>
+    </div>
+
 </body>
 </html>
