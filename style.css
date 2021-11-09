@@ -1,77 +1,97 @@
 /* Extra Styles */
 
 label.underline {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 label.disabled {
-    cursor: not-allowed;
-    color: #888;
-    font-style: italic;
+  cursor: not-allowed;
+  color: #888;
+  font-style: italic;
 }
 
-.red, .green, .blue {
-    width: 100px;
-    height: 100px;
+.red,
+.green,
+.blue {
+  width: 100px;
+  height: 100px;
 }
 
 .red {
-    background: #f00;
+  background: #f00;
 }
 
 .green {
-    background: #0f0;
+  background: #0f0;
 }
 
 .blue {
-    background: #00f;
+  background: #00f;
 }
 
-body{
-    margin-left: 50px;
-    margin-right: 50px;
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: aquamarine;
 }
 
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
 /* Checkbox Control */
 
 input[type="checkbox"].control {
-    display: none;
+  display: none;
 }
 
 input[type="checkbox"].control + label + * {
-    transition: ease-in-out .5s;
+  transition: ease-in-out 0.5s;
 }
 
 input[type="checkbox"].control:checked + label::before {
-    content: "\2B9F";
+  content: "\2B9F";
 }
 
 input[type="checkbox"].control:not(:checked) + label::before {
-    content: "\2B9E ";
+  content: "\2B9E ";
 }
 
 input[type="checkbox"].control:not(:checked) + label + * {
-    height: 0;
+  height: 0;
 }
 
 input[type="checkbox"].control:checked + label + * {
-    height: 100px;
+  height: 100px;
 }
-
 
 /* Radio Control */
 
 input[type="radio"].control {
-    display: none;
+  display: none;
 }
 
 input[type="radio"].control:checked ~ input[type="radio"].control + * {
-    display: none;
+  display: none;
 }
 
-
 input[type="radio"].control:not(:checked) + * {
-    display: none;
+  display: none;
 }
