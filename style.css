@@ -59,6 +59,15 @@ p {
     text-align: center;
 }
 
+.centroImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
 /* Media Queries */
 
 @media (max-width: 1000px) {
