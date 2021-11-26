@@ -23,7 +23,7 @@ main {
 }
 
 small {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 h1 {
@@ -53,6 +53,13 @@ li {
 
 p {
     font-size: 20px;
+}
+
+.code{
+    font-size: 15px;
+    text-align: left;
+    margin-left:50px;
+    margin-right:auto;
 }
 
 .centro {
