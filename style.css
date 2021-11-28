@@ -1,6 +1,6 @@
 /* Main Styles */
 
-* {
+*:not(code) {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,10 +20,6 @@ main {
     height: auto;
     padding: 20px 10px;
     background: #fff;
-}
-
-small {
-    font-size: 10px;
 }
 
 h1 {
@@ -55,11 +51,15 @@ p {
     font-size: 20px;
 }
 
-.code{
-    font-size: 15px;
+code {
+    background: #ccc;
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 7px;
+    border-radius: 5px;
+    white-space: pre-line;
+    display: inline-block;
     text-align: left;
-    margin-left:50px;
-    margin-right:auto;
 }
 
 .centro {
@@ -76,10 +76,13 @@ table, th, td{
     border: 1px solid black;
 }
 
-.pointer {
-    cursor: pointer;
+table {
+    background: #2e56a0;
 }
 
+th, td {
+    background: #fff;
+}
 
 .pointer {
     cursor: pointer;
@@ -91,7 +94,6 @@ table, th, td{
 
 .noOverflow {
     overflow: hidden;
-    height: max-content;
 }
 
 /* Media Queries */
@@ -130,13 +132,16 @@ input[type="checkbox"].control:not(:checked) + label::before {
     content: "\2B9E ";
 }
 
-input[type="checkbox"].control:not(:checked) + label + * {
-    height: 0;
+input[type="checkbox"].control:checked + label + * {
+    /* max-height absurdamente alto para asegurarnos que entra todo el contenido */
+    max-height: 5000px;
 }
 
-input[type="checkbox"].control:checked + label + * {
-    height: 100px;
+input[type="checkbox"].control:not(:checked) + label + * {
+    max-height: 0;
 }
+
+
 
 /* Radio Control */
 /* Es el CSS responsable de la navegacion "Anterior-Siguiente" */
