@@ -10,7 +10,10 @@
     <h1>Prograpage</h1>
     
     <p class="centro">El lugar donde encontrarás paginas variadas introduciendo <em>muy</em> brevemente algunos lenguajes de programación</p>
-    <img src="./Imágenes/prograpage_logo.jpg" alt="¡Bienvenidos a Prograpage!" class="centroImg" height="200px" width="200px">
+    <img id="logo" src="./Imágenes/prograpage_logo.jpg" alt="¡Bienvenidos a Prograpage!" class="centroImg" height="200px" width="200px">
+    <audio id="audio">
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
     <hr color="#000">
     <main class="centro">
         <p>Índice</p>
@@ -19,4 +22,12 @@
             <li><a href="./pag_2_0_esotericos.html">2. Lenguajes Esotéricos</a></li>
         </ul>
     </main>
+
+    <!-- No es nada importante, un pequeño toque ;) -->
+    <script>
+        document.getElementById("logo").onclick = () => {
+            document.getElementById("audio").volume = 0.5;
+            document.getElementById("audio").play();
+        };
+    </script>
 </body>

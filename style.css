@@ -141,8 +141,6 @@ input[type="checkbox"].control:not(:checked) + label + * {
     max-height: 0;
 }
 
-
-
 /* Radio Control */
 /* Es el CSS responsable de la navegacion "Anterior-Siguiente" */
 
