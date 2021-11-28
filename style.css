@@ -75,6 +75,25 @@ p {
 table, th, td{
     border: 1px solid black;
 }
+
+.pointer {
+    cursor: pointer;
+}
+
+
+.pointer {
+    cursor: pointer;
+}
+
+.pointer:hover {
+    text-decoration: underline;
+}
+
+.noOverflow {
+    overflow: hidden;
+    height: max-content;
+}
+
 /* Media Queries */
 
 @media (max-width: 1000px) {
@@ -93,6 +112,7 @@ table, th, td{
 
 /* Extra Details */
 /* Checkbox Control */
+/* Es el CSS responsable de los desplegables */
 
 input[type="checkbox"].control {
     display: none;
@@ -119,6 +139,7 @@ input[type="checkbox"].control:checked + label + * {
 }
 
 /* Radio Control */
+/* Es el CSS responsable de la navegacion "Anterior-Siguiente" */
 
 input[type="radio"].control {
     display: none;
